@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    font-family: Iosevka;
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+  }
+
+  /* Clearfix (clear floats) */
+  .row-fork::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  @media only screen and (max-width: 991px) and (min-width: 769px) {
+    .carousel,
+    .slide {
+      width: 70%;
+      margin: auto;
+    }
+  }
+  #pdf-lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  #pdf-lightbox iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    border: none;
+  }
+  .modal {
+  --bs-modal-bg: #000000de;
+  filter: hue-rotate(-29deg);
+}
+.modal-header{ 
+
+  border-bottom: var(--bs-modal-header-border-width) solid #ffffff0f;
+}
+.modal-footer{ 
+
+  border-bottom: var(--bs-modal-header-border-width) solid #ffffff0f;
+}
+.offcanvas-header {
+  filter: drop-shadow(2px 4px 6px black);
+}
+.offcanvas-body {
+
+  filter: drop-shadow(2px 4px 6px black);
+
+}
+.offcanvas, offcanvas-end, text-bg-dark, show {
+  filter: hue-rotate(45deg);
+}
+.form-control, bg-dark, text-bg-dark, me-2 {
+  border:none;
+}
+.offcanvas offcanvas-end text-bg-dark show {
+  background: linear-gradient(257deg, rgb(0 0 0 / 6%) 0%, rgb(0 0 0 / 90%) 100%)!important;
+}
+.offcanvas,.offcanvas-lg,.offcanvas-md,.offcanvas-sm,.offcanvas-xl,.offcanvas-xxl {
+  /* --bs-offcanvas-border-color: var(--bs-border-color-translucent); */
+  /* --bs-offcanvas-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) */
+  --bs-offcanvas-border-color: #0000002d;
+  --bs-offcanvas-box-shadow: 0 0.125rem 0.25remrgba(0, 0, 0, 0.075)
+}
+.offcanvas {
+background: linear-gradient(257deg, rgb(0 0 0 / 6%) 0%, rgb(0 0 0 / 90%) 100%)!important;
+}
+
+.chat-message {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 60%;
+}
+.card:hover {
+  background-color: #0a0909 ;
+  box-shadow: 0 0 10px rgb(6, 4, 4) ;
+  transform: scale(1.05) ;
+}
+.card-hover-override:hover {
+  background-color:none !important;
+  box-shadow: none !important;
+  transform: none !important;
+
+}
+.bot-message {
+  text-align:start;
+  background: linear-gradient(-68deg, rgb(237 223 223 / 32%) 0%, rgb(41 36 36 / 33%) 100%);
+  border: none !important;
+
+}
+.list-group-item {
+  background-color: #01000297 !important;
+  border-color: #01000297 !important;
+}
