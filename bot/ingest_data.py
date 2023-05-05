@@ -8,8 +8,8 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-huggingfacehub_api_token = "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";
-openai_api_key = "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"
+huggingfacehub_api_token = 
+openai_api_key = 
 
 
 
